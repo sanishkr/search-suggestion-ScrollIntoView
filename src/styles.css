@@ -1,0 +1,107 @@
+.App {
+  font-family: sans-serif;
+}
+
+input {
+  padding: 8px;
+  width: 100%;
+  max-width: 500px;
+  height: 20px;
+  border: none;
+  border-bottom: solid #000 1px;
+  appearance: none;
+  outline: none;
+}
+
+.no-result {
+  list-style: none;
+  z-index: 10;
+  width: 100%;
+  max-width: 520px;
+  border: solid gray 1px;
+  position: absolute;
+  top: 36px;
+  left: 0;
+  margin: auto;
+  min-height: 100px;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.suggestion {
+  list-style: none;
+  z-index: 10;
+  width: 100%;
+  max-width: 520px;
+
+  background-color: rgb(245, 245, 245);
+  border: solid gray 1px;
+  border-radius: 5px;
+
+  position: absolute;
+  top: 36px;
+  left: 0;
+
+  margin: auto;
+  padding: 0;
+  height: auto;
+  max-height: 240px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.search-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.suggestion-item {
+  padding: 8px 16px;
+  border-bottom: solid gray 1px;
+  display: flex;
+  flex-direction: column;
+}
+
+.suggestion-item .id {
+  font-weight: 700;
+  padding-bottom: 4px;
+}
+
+.suggestion-item .name {
+  font-style: italic;
+  padding-bottom: 4px;
+}
+
+.suggestion-item .items {
+  border-top: solid #ddd 1px;
+  border-bottom: solid #ddd 1px;
+  margin: 4px 0px;
+  padding: 4px 0;
+  color: #444;
+  font-weight: 300;
+}
+
+.suggestion-item .address {
+  color: #999;
+  font-weight: 300;
+}
+
+.highlighted {
+  color: rgb(14, 122, 223);
+  font-weight: 600;
+}
+
+.hovered {
+  background-color: rgb(240, 240, 197);
+}
+
+mark {
+  background-color: transparent;
+}
+
+.items-middot {
+  font-weight: 900;
+  font-size: 20px;
+  color: rgb(14, 122, 223);
+  padding: 0px 4px;
+}
